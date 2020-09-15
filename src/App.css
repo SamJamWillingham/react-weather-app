@@ -1,9 +1,162 @@
 .App {
-  margin: 10px auto;
-  max-width: 800px;
   font-family: sans-serif;
   text-align: center;
-  border: 1px solid #000000;
-  border-radius: 8px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Sansita", sans-serif;
+}
+
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-moz-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@-webkit-keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.stars {
+  background: black
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+
+  -moz-animation: move-background 70s linear infinite;
+  -ms-animation: move-background 70s linear infinite;
+  -o-animation: move-background 70s linear infinite;
+  -webkit-animation: move-background 70s linear infinite;
+  animation: move-background 70s linear infinite;
+}
+
+.clouds {
+  width: 10000px;
+  height: 100%;
+  background: transparent
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png")
+    repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+
+  -moz-animation: move-background 150s linear infinite;
+  -ms-animation: move-background 150s linear infinite;
+  -o-animation: move-background 150s linear infinite;
+  -webkit-animation: move-background 150s linear infinite;
+  animation: move-background 150s linear infinite;
+}
+img#background-image {
+  height: 70vh;
+  width: 70vh;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+}
+#header {
+  position: fixed;
+  top: 1vw;
+  left: 3vw;
+  background-image: linear-gradient(
+    120deg,
+    rgba(253, 251, 251, 0.4) 0%,
+    rgba(235, 237, 238, 0.4) 100%
+  );
+  border-radius: 10px;
+  z-index: 5;
+}
+
+button.btn {
+  font-size: 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+  border: none;
+  margin: 0 10px 0 5px;
+}
+h1.brand {
+  font-family: "Megrim", cursive;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  color: #000000;
+  text-shadow: 1.5px 1.5px 0 #ffffff;
+  font-size: 50px;
+}
+form {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+div#currentWeather {
+  position: fixed;
+  top: 10vw;
+  left: 3vw;
+  background-image: linear-gradient(
+    120deg,
+    rgba(253, 251, 251, 0.4) 0%,
+    rgba(235, 237, 238, 0.4) 100%
+  );
+  border-radius: 10px;
+  z-index: 5;
+  font-size: 2vw;
+}
+div#credit {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 5;
 }

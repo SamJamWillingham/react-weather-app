@@ -1,8 +1,9 @@
 import React from "react";
+import "./App.css";
 
 export default function Credit() {
   return (
-    <div>
+    <div id="credit">
       <small>
         Icons made by{" "}
         <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
