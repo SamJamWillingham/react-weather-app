@@ -140,9 +140,16 @@ form {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+h3.current-city {
+  font-family: "Megrim", cursive;
+  font-weight: bolder;
+  padding: 5px;
+}
+
 div#currentWeather {
   position: fixed;
-  top: 10vw;
+  top: 12vw;
   left: 3vw;
   background-image: linear-gradient(
     120deg,

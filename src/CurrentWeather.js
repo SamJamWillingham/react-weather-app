@@ -18,8 +18,12 @@ export default function CurrentWeather() {
     <div id="currentWeather">
       <Row>
         <Col>
-          <h3 className="Current City">{WeatherData.city}</h3>
+          <h3 className="current-city">{WeatherData.city}</h3>
           <p>{WeatherData.date}</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
           <img
             src={WeatherData.icon}
             alt={WeatherData.description}
