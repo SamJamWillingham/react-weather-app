@@ -13,21 +13,21 @@ export default function Header() {
         </Col-auto>
         <Col>
           <form className="form-inline" id="city-form">
-            <label className="sr-only" for="inlineFormInputName2">
+            <label className="sr-only" htmlFor="inlineFormInputName2">
               Change City
             </label>
             <input
               type="text"
               className="form-control mb-2 mr-sm-2"
-              autofocus="on"
-              autocomplete="off"
+              autoFocus="on"
+              autoComplete="off"
               placeholder="Helsinki"
             />
             <button type="submit" className="btn btn-primary mb-2">
-              <i class="fas fa-search"></i>
+              <i className="fas fa-search"></i>
             </button>
             <button className="btn btn-primary mb-2" id="find-location">
-              <i class="fas fa-compass"></i>
+              <i className="fas fa-compass"></i>
             </button>
           </form>
         </Col>

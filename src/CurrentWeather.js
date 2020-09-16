@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import axios from "axios";
 
 import { Row, Col } from "react-bootstrap";
 
 export default function CurrentWeather() {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
   let WeatherData = {
     city: "Charlotte",
     date: "Fri, Aug 28 12:00",
@@ -13,6 +18,11 @@ export default function CurrentWeather() {
     humidity: 60,
     wind: 2,
   };
+
+  const apiKey = "f8789029e0a5277fb2e5a66c29f35e2c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${WeatherData.city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(handleResponse);
 
   return (
     <div id="currentWeather">
