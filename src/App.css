@@ -140,6 +140,18 @@ form {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+div.Loader {
+  position: fixed;
+  top: 14vw;
+  left: 3vw;
+  background-image: linear-gradient(
+    120deg,
+    rgba(253, 251, 251, 0.4) 0%,
+    rgba(235, 237, 238, 0.4) 100%
+  );
+  border-radius: 10px;
+  z-index: 5;
+}
 
 h3.current-city {
   font-family: "Megrim", cursive;
@@ -157,8 +169,13 @@ div#currentWeather {
     rgba(235, 237, 238, 0.4) 100%
   );
   border-radius: 10px;
+  padding: 20px;
   z-index: 5;
   font-size: 2vw;
+}
+ul,
+li {
+  list-style: none;
 }
 div#credit {
   position: fixed;
