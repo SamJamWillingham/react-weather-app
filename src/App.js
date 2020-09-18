@@ -18,7 +18,7 @@ export default function App() {
         <div className="twinkling"></div>
         <div className="clouds"></div>
         <Header />
-        <CurrentWeather />
+        <CurrentWeather defaultCity="Charlotte" />
         <Credit />
       </div>
     </div>
