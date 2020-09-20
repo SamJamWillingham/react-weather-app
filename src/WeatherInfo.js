@@ -21,6 +21,7 @@ export default function WeatherInfo(props) {
             src={`http://openweathermap.org/img/w/${props.data.icon}.png`}
             alt={props.data.description}
             width={80}
+            className="current-icon"
           />
           <p>
             <span className="Current">
@@ -28,6 +29,10 @@ export default function WeatherInfo(props) {
             </span>{" "}
             <span className="Fahrenheit">°F</span> |{" "}
             <span className="celsuis">°C</span>
+            <br />
+            <small>
+              Feels like <strong>{Math.round(props.data.feelsLike)}°C</strong>
+            </small>
           </p>
         </Col>
         <Col>
