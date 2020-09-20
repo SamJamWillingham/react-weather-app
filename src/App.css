@@ -108,6 +108,8 @@ img#background-image {
 
 .header {
   position: fixed;
+  top: 20px;
+  left: 20px;
   background-image: linear-gradient(
     120deg,
     rgba(253, 251, 251, 0.4) 0%,
@@ -118,7 +120,7 @@ img#background-image {
 }
 
 button.btn.btn-primary.mb-2 {
-  margin-right: 10px;
+  margin-right: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   border: none;
@@ -133,7 +135,7 @@ i {
   font-family: "Megrim", cursive;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 80px;
+  padding-left: 35px;
   color: #f6f5f6;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1.5px 1.5px 0 #000;
@@ -187,6 +189,9 @@ div#credit {
   position: fixed;
   bottom: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 5;
+}
+div #credit a {
+  color: white;
 }
