@@ -1,8 +1,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Header from "./Header.js";
-import CurrentWeather from "./CurrentWeather.js";
+import FORM_LOADER from "./FORM_LOADER.js";
 import Credit from "./Credit";
 
 export default function App() {
@@ -17,8 +16,8 @@ export default function App() {
         <div className="stars"></div>
         <div className="twinkling"></div>
         <div className="clouds"></div>
-        <Header />
-        <CurrentWeather defaultCity="Charlotte" />
+        <FORM_LOADER defaultCity="Charlotte" />
+
         <Credit />
       </div>
     </div>

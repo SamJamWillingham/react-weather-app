@@ -105,10 +105,9 @@ img#background-image {
   z-index: 3;
   right: 20px;
 }
-#header {
+
+.header {
   position: fixed;
-  top: 15px;
-  left: 25px;
   background-image: linear-gradient(
     120deg,
     rgba(253, 251, 251, 0.4) 0%,
@@ -118,20 +117,26 @@ img#background-image {
   z-index: 5;
 }
 
-button.btn {
-  font-size: 18px;
+button.btn.btn-primary.mb-2 {
+  margin-right: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
   border: none;
-  margin: 0 10px 0 5px;
+  border-radius: 6px;
 }
-h1.brand {
+i {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 3px;
+}
+.brand {
   font-family: "Megrim", cursive;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 30px;
-  color: #000000;
-  text-shadow: 1.5px 1.5px 0 #ffffff;
+  padding-left: 80px;
+  color: #f6f5f6;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1.5px 1.5px 0 #000;
   font-size: 50px;
 }
 form {
@@ -140,6 +145,7 @@ form {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 div.Loader {
   position: fixed;
   top: 15px;
@@ -152,7 +158,6 @@ div.Loader {
   border-radius: 10px;
   z-index: 5;
 }
-
 h3.current-city {
   font-family: "Megrim", cursive;
   font-weight: bolder;
@@ -160,7 +165,7 @@ h3.current-city {
   padding: 5px;
 }
 
-div#currentWeather {
+div .weatherInfo {
   position: fixed;
   top: 150px;
   left: 25px;
