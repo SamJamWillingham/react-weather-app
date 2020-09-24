@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FormattedDate from "./FormattedDate";
 import { Row, Col } from "react-bootstrap";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
@@ -17,12 +18,7 @@ export default function WeatherInfo(props) {
       </Row>
       <Row>
         <Col>
-          <img
-            src={`http://openweathermap.org/img/w/${props.data.icon}.png`}
-            alt={props.data.description}
-            width={80}
-            className="current-icon"
-          />
+          <WeatherIcon iconCode={props.data.icon} />
           <p>
             <span className="Current">
               {Math.round(props.data.temperature)}{" "}
