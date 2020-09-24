@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import FormattedDate from "./FormattedDate";
 import { Row, Col } from "react-bootstrap";
 import WeatherIcon from "./WeatherIcon";
+import Temperature from "./Temperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -19,17 +20,10 @@ export default function WeatherInfo(props) {
       <Row>
         <Col>
           <WeatherIcon iconCode={props.data.icon} />
-          <p>
-            <span className="Current">
-              {Math.round(props.data.temperature)}{" "}
-            </span>{" "}
-            <span className="Fahrenheit">°F</span> |{" "}
-            <span className="celsuis">°C</span>
-            <br />
-            <small>
-              Feels like <strong>{Math.round(props.data.feelsLike)}°C</strong>
-            </small>
-          </p>
+          <Temperature
+            fahrenheitTemp={props.data.temperature}
+            feelsLike={props.data.feelsLike}
+          />
         </Col>
         <Col>
           <h3 className="text-capitalize">{props.data.description}</h3>

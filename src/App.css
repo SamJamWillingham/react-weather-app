@@ -179,6 +179,22 @@ h3.text-capitalize {
   font-size: 35px;
 }
 
+.unit {
+  font-weight: bold;
+  color: black;
+}
+
+button {
+  background: none;
+  border: none;
+  color: black;
+}
+
+button:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 ul,
 li {
   list-style: none;
