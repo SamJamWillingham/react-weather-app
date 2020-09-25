@@ -110,6 +110,8 @@ img#background-image {
   position: fixed;
   top: 30px;
   left: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-image: linear-gradient(
     120deg,
     rgba(253, 251, 251, 0.4) 0%,
@@ -170,7 +172,7 @@ img.current-icon {
   width: 100px;
 }
 .text-capitalize {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -205,17 +207,22 @@ li {
   list-style: none;
   text-align: center;
 }
+.forecast canvas {
+  display: block;
+  margin: 5px auto;
+}
 .forecast {
-  border: 1px solid red;
   display: flex;
+  text-align: center;
 }
 .forecast-0,
 .forecast-1,
 .forecast-2,
 .forecast-3,
 .forecast-4 {
-  display: flex;
+  flex: 1;
 }
+
 div#credit {
   position: fixed;
   bottom: 0;

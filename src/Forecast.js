@@ -14,7 +14,7 @@ export default function Forecast(props) {
     setLoaded(true);
   }
 
-  if (loaded === true) {
+  if (loaded && props.city === forecast.city.name) {
     return (
       <Row className="forecast">
         <Col className="forecast-0">
