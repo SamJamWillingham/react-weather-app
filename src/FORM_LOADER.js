@@ -5,6 +5,7 @@ import axios from "axios";
 import { Row, Col } from "react-bootstrap";
 import Loader from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 
 export default function Form_Loader(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -77,6 +78,12 @@ export default function Form_Loader(props) {
         <Row>
           <Col>
             <WeatherInfo data={weatherData} />
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col>
+            <Forecast city={weatherData.city} />
           </Col>
         </Row>
       </div>

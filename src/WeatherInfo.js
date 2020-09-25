@@ -5,7 +5,6 @@ import FormattedDate from "./FormattedDate";
 import { Row, Col } from "react-bootstrap";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
-import Forecast from "./Forecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -33,11 +32,6 @@ export default function WeatherInfo(props) {
             <li>Wind: {props.data.wind.speed} mph</li>
             <li>Humidity: {props.data.humidity}%</li>
           </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <Forecast />
         </Col>
       </Row>
     </div>
