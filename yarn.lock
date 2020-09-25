@@ -6922,6 +6922,11 @@ mkdirp@^0.5.5:
   dependencies:
     minimist "^1.2.5"
 
+moon-phase-widget@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/moon-phase-widget/-/moon-phase-widget-1.5.1.tgz#3e2776a638afc7a833c993b6f6901d78fefc76d9"
+  integrity sha512-aAJatspa8uGimugikaM53xqBCjFxZhFkEZXlIbBRpMTddgslwOoljNTzl/jGLtU5iaQB8CgPgOIy7xxz3Tm26A==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"

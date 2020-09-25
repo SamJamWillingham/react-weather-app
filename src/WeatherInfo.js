@@ -5,6 +5,7 @@ import FormattedDate from "./FormattedDate";
 import { Row, Col } from "react-bootstrap";
 import WeatherIcon from "./WeatherIcon";
 import Temperature from "./Temperature";
+import Forecast from "./Forecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -18,19 +19,25 @@ export default function WeatherInfo(props) {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col className="current-flex">
           <WeatherIcon iconCode={props.data.icon} />
+          <br />
           <Temperature
             fahrenheitTemp={props.data.temperature}
             feelsLike={props.data.feelsLike}
           />
         </Col>
-        <Col>
-          <h3 className="text-capitalize">{props.data.description}</h3>
+        <Col className="current-flex">
           <ul>
+            <li className="text-capitalize">{props.data.description}</li>
             <li>Wind: {props.data.wind.speed} mph</li>
             <li>Humidity: {props.data.humidity}%</li>
           </ul>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Forecast />
         </Col>
       </Row>
     </div>

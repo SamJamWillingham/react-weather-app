@@ -164,19 +164,24 @@ h3.current-city {
   font-family: "Megrim", cursive;
   font-weight: bolder;
   font-size: 35px;
-  padding: 5px;
 }
 img.current-icon {
   height: 100px;
   width: 100px;
 }
-h3.text-capitalize {
-  text-align: center;
+.text-capitalize {
   font-size: 24px;
+  font-weight: bold;
 }
 
 .Current {
   font-size: 35px;
+}
+
+.current-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .unit {
