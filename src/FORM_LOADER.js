@@ -68,9 +68,6 @@ export default function Form_Loader(props) {
               <button type="submit" className="btn btn-primary mb-2">
                 <i className="fas fa-search"></i>
               </button>
-              <button className="btn btn-primary mb-2" id="find-location">
-                <i className="fas fa-compass"></i>
-              </button>
             </form>
           </Col>
         </Row>
